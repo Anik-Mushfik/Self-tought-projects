@@ -4,7 +4,7 @@ from datetime import datetime as dt
 window = Tk()
 window.geometry("300x300")
 window.title("Clock")
-window.config(background="lavender")
+window.config(background="black")
 
 
 def update_time():
@@ -16,8 +16,8 @@ lable = Label(
     master=window, 
     text=f"Time: {dt.now().hour}:{dt.now().minute}:{dt.now().second} \nDate:{dt.now().day}/{dt.now().month}/{dt.now().year}", 
     font="Calibri 30 bold", 
-    foreground="brown", 
-    background="lavender"
+    foreground="red", 
+    background="black"
     )
 lable.pack(pady=30, side="top")
 
