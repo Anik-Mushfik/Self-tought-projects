@@ -7,17 +7,55 @@ window.title("Tic Tac Toe")
 
 click_count = 0
 
+# def combo_checker():
+#     for btn in combo:
+#         symbol = btn.cget("text")
+#         if symbol == "":
+#             continue
+#         i = combo.index(btn)
+        # if (combo[i-1].cget("text") == symbol) and (combo[i+1].cget("text") == symbol):
+        #     if symbol == "0":
+        #         label.config(text="Congraatulations!! Player 1 WON!!!")
+        #     else:
+        #         label.config(text="Congraatulations!! Player 2 WON!!!")
+
 def combo_checker():
-    for btn in combo:
-        symbol = btn.cget("text")
-        if symbol == "":
-            continue
-        i = combo.index(btn)
-        if (combo[i-1].cget("text") == symbol) and (combo[i+1].cget("text") == symbol):
-            if symbol == "0":
-                label.config(text="Congraatulations!! Player 1 WON!!!")
-            else:
-                label.config(text="Congraatulations!! Player 2 WON!!!")
+    got_winner = False
+    if (combo[0].cget("text") == combo[1].cget("text")) and (combo[1].cget("text") == combo[2].cget("text")):
+        symbol = combo[0].cget("text")
+        got_winner = True
+    elif (combo[3].cget("text") == combo[4].cget("text")) and (combo[4].cget("text") == combo[5].cget("text")):
+        symbol = combo[3].cget("text")
+        got_winner = True
+    elif (combo[6].cget("text") == combo[7].cget("text")) and (combo[7].cget("text") == combo[8].cget("text")):
+        symbol = combo[6].cget("text")
+        got_winner = True
+    elif (combo[0].cget("text") == combo[3].cget("text")) and (combo[3].cget("text") == combo[6].cget("text")):
+        symbol = combo[0].cget("text")
+        got_winner = True
+    elif (combo[1].cget("text") == combo[4].cget("text")) and (combo[4].cget("text") == combo[7].cget("text")):
+        symbol = combo[1].cget("text")
+        got_winner = True
+    elif (combo[3].cget("text") == combo[5].cget("text")) and (combo[5].cget("text") == combo[8].cget("text")):
+        symbol = combo[3].cget("text")
+        got_winner = True
+    elif (combo[0].cget("text") == combo[4].cget("text")) and (combo[4].cget("text") == combo[8].cget("text")):
+        symbol = combo[0].cget("text")
+        got_winner = True
+    elif (combo[2].cget("text") == combo[4].cget("text")) and (combo[4].cget("text") == combo[6].cget("text")):
+        symbol = combo[2].cget("text")
+        got_winner = True
+    
+    if got_winner:
+        if symbol == "0":
+            label.config(text="Congraatulations!! Player 1 WON!!! \nGame will be distroyed in 5 seconds!")
+        else:
+            label.config(text="Congraatulations!! Player 2 WON!!! \nGame will be distroyed in 5 seconds")
+        # time.sleep(5)
+        # window.destroy()
+        # window.quit()
+        
+
 
 def play(btn):
     global click_count
