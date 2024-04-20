@@ -21,6 +21,7 @@ click_count = 0
 
 def combo_checker():
     got_winner = False
+    
     if (combo[0].cget("text") == combo[1].cget("text")) and (combo[1].cget("text") == combo[2].cget("text")):
         symbol = combo[0].cget("text")
         got_winner = True
@@ -36,8 +37,8 @@ def combo_checker():
     elif (combo[1].cget("text") == combo[4].cget("text")) and (combo[4].cget("text") == combo[7].cget("text")):
         symbol = combo[1].cget("text")
         got_winner = True
-    elif (combo[3].cget("text") == combo[5].cget("text")) and (combo[5].cget("text") == combo[8].cget("text")):
-        symbol = combo[3].cget("text")
+    elif (combo[2].cget("text") == combo[5].cget("text")) and (combo[5].cget("text") == combo[8].cget("text")):
+        symbol = combo[2].cget("text")
         got_winner = True
     elif (combo[0].cget("text") == combo[4].cget("text")) and (combo[4].cget("text") == combo[8].cget("text")):
         symbol = combo[0].cget("text")
@@ -46,11 +47,11 @@ def combo_checker():
         symbol = combo[2].cget("text")
         got_winner = True
     
-    if got_winner:
-        if symbol == "0":
-            label.config(text="Congraatulations!! Player 1 WON!!! \nGame will be distroyed in 5 seconds!")
+    if got_winner == True:
+        if symbol == "X":
+            label.config(text="Congraatulations!! Player 2 WON!!! \nGame will be distroyed in 5 seconds!")
         else:
-            label.config(text="Congraatulations!! Player 2 WON!!! \nGame will be distroyed in 5 seconds")
+            label.config(text="Congraatulations!! Player 1 WON!!! \nGame will be distroyed in 5 seconds")
         # time.sleep(5)
         # window.destroy()
         # window.quit()
