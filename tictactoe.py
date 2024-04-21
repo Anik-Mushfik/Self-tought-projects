@@ -64,7 +64,7 @@ def play(btn):
     if (btn.cget("text") != ""):
         return
     click_count += 1
-    # this is to check the combination for winning
+        # this is to check the combination for winning
     if click_count >= 5:
         combo_checker()
     # this is to change the button text after click
