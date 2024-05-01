@@ -1,0 +1,9 @@
+INFO:root:Transaction time: 2024-05-01 22:12:15.362970; Account no:0152330101; Transaction type: Deposit; Balance: 1000
+INFO:root:Transaction time: 2024-05-01 22:12:15.362970; Account no:0152330101; Transaction type: Withdraw; Balance: 51000
+INFO:root:Transaction time: 2024-05-01 22:12:15.367697; Account no:0152330101; Transaction type: Withdraw; Balance: 1000
+INFO:root:Transaction time: 2024-05-01 22:12:15.369160; Account no:0152330101; Transaction type: Withdraw; Balance: 1000
+INFO:root:Transaction time: 2024-05-01 22:12:38.912199; Account no:0152330101; Transaction type: Deposit; Balance: 1000
+INFO:root:Transaction time: 2024-05-01 22:12:38.928015; Account no:0152330101; Transaction type: Withdraw; Balance: 51000
+INFO:root:Transaction time: 2024-05-01 22:12:38.931659; Account no:0152330101; Transaction type: Withdraw; Balance: 1000
+INFO:root:Transaction time: 2024-05-01 22:12:38.934412; Account no:0152330101; Transaction type: Withdraw; Balance: 1000
+INFO:root:Transaction time: 2024-05-01 22:14:16.727146; Account no:0152330101; Transaction type: Deposit; Balance: 1000
