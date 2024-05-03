@@ -17,8 +17,8 @@ class Account:
     def log_balance(func):
 
         import logging
-        logging.basicConfig(filename="C:/Musfique's Folder/Python/Self-tought-projects/Bank Acoount App/transaction.log", level=logging.INFO)
-
+        # logging.basicConfig(filename="C:/Musfique's Folder/Python/Self-tought-projects/Bank Acoount App/transaction.log", level=logging.INFO)
+        logging.basicConfig(filename="D:\Python Study\Self-tought-projects\Bank Acoount App/transaction.log", level=logging.INFO)
 
         @wraps(func)
         def wrapper(self, amount):
@@ -56,7 +56,7 @@ class Account:
 
 
 ac_1 = Account("Anik", "0152330101")
-# ac_1.deposit(50000)
+ac_1.deposit(50000)
 # ac_1.withdraw(50000)
 # ac_1.withdraw(2000)
-# ac_1.withdraw(1000)
+ac_1.withdraw(1000)
