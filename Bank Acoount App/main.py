@@ -55,15 +55,3 @@ class Account:
 
 
 
-ac_1 = Account("Anik", "0152330101")
-ac_1.deposit(50000)
-# ac_1.withdraw(50000)
-# ac_1.withdraw(2000)
-<<<<<<< HEAD
-ac_1.withdraw(1000)
-=======
-# ac_1.withdraw(1000)
-ac2 = Account("MAihc", "8927346958")
-ac2.deposit(50000)
-ac2.withdraw(10000)
->>>>>>> a85846c553a2df7bf3da718016247f79a48dd25e
