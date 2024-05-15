@@ -49,9 +49,3 @@ class Account:
         else:
             self.balance -= amount
 
-
-
-
-
-
-
