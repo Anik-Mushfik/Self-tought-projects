@@ -38,7 +38,7 @@ if selected == 'Disease Prediction':
     ''')
 
 
-    st.button("**Predict**:thumdsup:", key='enter')
+    st.button("**Predict**👌", key='enter')
 
 
 
@@ -51,7 +51,7 @@ if selected == 'Doctor Recommendation':
 
 if selected == 'Appointment Schedule':
     st.title('Appointment Schedule')
-
+    
 
 
 
