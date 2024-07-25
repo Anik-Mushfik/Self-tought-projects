@@ -51,9 +51,19 @@ if selected == 'Doctor Recommendation':
 
 if selected == 'Appointment Schedule':
     st.title('Appointment Schedule')
+
+    name = st.text_input("Patient Name")
+    age = st.text_input("Patient Age")
+    date_of_birth = st.date_input("Patient Date of Birth")
+    doc_name = st.text_input("Enter Doctor's Name")
     
+    st.video("C:\Musfique's Folder\index4.mp4")
+    st.help()
 
 
 
 if selected == "Doctor's Assistant":
     st.title("Doctor's Assistant")
+
+    text = st.chat_input("Char with me")
+    st.chat_message()
