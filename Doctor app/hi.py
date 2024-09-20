@@ -22,7 +22,7 @@ with st.sidebar:
 if selected == 'Disease Prediction':
     st.title('Disease Prediction')
 
-    df = pd.read_csv("C:\Musfique's Folder\Python\Self-tought-projects\Doctor app\Disease Prediction\Training.csv")
+    df = pd.read_csv("D:\Python Study\Self-tought-projects\Doctor app\Disease Prediction\Training.csv")
     symptroms = sorted(df.columns)
 
 
