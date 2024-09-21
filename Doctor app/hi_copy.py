@@ -23,7 +23,7 @@ with st.sidebar:
 if selected == 'Disease Prediction':
     st.title('Disease Prediction')
 
-    df = pd.read_csv("D:\Python Study\Self-tought-projects\Doctor app\Disease Prediction\Training.csv")
+    df = pd.read_csv("Disease Prediction\Training.csv")
     df.drop(["Unnamed: 133", "prognosis"], axis=1, inplace= True)
     symptoms = df.columns
 
@@ -52,10 +52,7 @@ if selected == 'Disease Prediction':
 
         # User data (ensure this matches the features used in training)
         user_data = option_dict
-        #     'feature1': [5.1],
-        #     'feature2': [3.5],
-        #     'feature3': [1.4]
-        # }
+        
 
         # Convert user data to DataFrame
         user_df = pd.DataFrame([user_data])
@@ -66,9 +63,7 @@ if selected == 'Disease Prediction':
         # Make predictions
         predictions = model.predict(user_df_scaled)
 
-        # Output the prediction
-        # print(f'Predictions: {predictions}')
-
+        
         st.markdown(f"## **Predictions: {predictions}!**")
 
 
