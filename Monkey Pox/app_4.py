@@ -8,7 +8,7 @@ model = joblib.load('random_forest_monkeypox_model.pkl')
 
 # 3. Define the application
 def main():
-
+    #I have deleted the desing part as that looked worse than streamlit design
     # 5. Title of the app
     st.title("Monkeypox Prediction App")
 
