@@ -8,52 +8,9 @@ model = joblib.load('random_forest_monkeypox_model.pkl')
 
 # 3. Define the application
 def main():
-    # 4. Add CSS for enhanced styling
-    st.markdown(
-        """
-        <style>
-        body {
-            background-color: #f0f8ff;
-            font-family: Arial, sans-serif;
-        }
-        .title {
-            color: #2E8B57;
-            text-align: center;
-            font-size: 36px;
-            margin: 20px 0;
-        }
-        .header {
-            font-size: 24px;
-            margin: 20px 0;
-            color: #333;
-        }
-        .stRadio, .stMultiselect {
-            margin: 20px 0;
-        }
-        .stButton {
-            background-color: #4CAF50;
-            color: white;
-            border-radius: 8px;
-            transition: background-color 0.3s;
-        }
-        .stButton:hover {
-            background-color: #45a049;
-        }
-        .spinner {
-            text-align: center;
-            color: #4CAF50;
-        }
-        .image {
-            display: block;
-            margin: 0 auto;
-            max-width: 100%;
-            height: auto;
-        }
-        </style>
-        """, unsafe_allow_html=True)
 
     # 5. Title of the app
-    st.markdown('<div class="title">Monkeypox Prediction App</div>', unsafe_allow_html=True)
+    st.title("Monkeypox Prediction App")
 
     # 6. Add an informative video
     st.video("https://www.youtube.com/watch?v=s8PAcUYRJdE&ab_channel=TheWallStreetJournal")  # Replace with a valid video URL
